@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Krishna Thumma - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/8986/8986868.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -248,18 +249,21 @@
         }
 
         .profile-pic {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            color: var(--dark);
-            margin: 0 auto;
-            animation: pulse 2s ease-in-out infinite;
-        }
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden; /* ensures image stays inside circle */
+    margin: 0 auto;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crops image neatly */
+    display: block;
+}
 
         @keyframes pulse {
             0%, 100% {
@@ -658,8 +662,8 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Sai Krishna Thumma</h1>
-            <p>Full-Stack Developer | UI/UX Designer | AI Enthusiast</p>
-            <p>Computer Science Student at GRIET | Microsoft Hackathon Participant</p>
+            <p>AI/ML Engineer |Full-Stack Developer | UI/UX Designer | AI Enthusiast</p>
+            <p>Computer Science Student at GRIET</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -673,14 +677,14 @@
         <div class="about-content">
             <div class="about-image">
                 <div class="profile-pic">
-                    <i class="fas fa-user"></i>
+                    <img src="profile pic.jpg" alt="My Profile Picture">
                 </div>
             </div>
             <div class="about-text">
                 <h3>Passionate Developer & Designer</h3>
                 <p>I'm a 4th-year Computer Science student at GRIET with a passion for creating innovative digital solutions. My journey spans across full-stack development, UI/UX design, AI/ML, and cybersecurity.</p>
                 <p>With hands-on experience from internships at CodeFyers and Kukbit SL, I've developed responsive web applications and collaborated with development teams to deliver user-focused solutions.</p>
-                <p>Currently preparing for the Microsoft Hyderabad Hackathon, I'm excited to showcase my technical skills and innovative problem-solving approach.</p>
+                <p>I'm excited to showcase my technical skills and innovative problem-solving approach.</p>
                 
                 <div class="stats">
                     <div class="stat">
@@ -692,7 +696,7 @@
                         <p>Projects</p>
                     </div>
                     <div class="stat">
-                        <h4>6.8</h4>
+                        <h4>7</h4>
                         <p>CGPA</p>
                     </div>
                 </div>
@@ -932,22 +936,22 @@
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
+                    <br>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
+                    <br>
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                    
+                    <br>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    
+                    <br>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
@@ -962,7 +966,7 @@
             <a href="https://github.com/thummasaikrishna" target="_blank"><i class="fab fa-github"></i></a>
             <a href="tel:+919553146238"><i class="fas fa-phone"></i></a>
         </div>
-        <p>&copy; 2024 Sai Krishna Thumma. Ready for Microsoft Hyderabad Hackathon!</p>
+        <p>&copy; 2024 Sai Krishna Thumma.</p>
     </footer>
 
     <script>
@@ -1252,7 +1256,7 @@
 
         window.addEventListener('scroll', updateScrollProgress);
         
-        console.log('🚀 Portfolio loaded successfully! Ready for Microsoft Hackathon 2024!');
+        console.log('🚀 Portfolio loaded successfully! Ready for 3 Hackathon 2024!');
     </script>
 </body>
 </html>
