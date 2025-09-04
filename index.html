@@ -632,6 +632,83 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+
+        /* Certifications Section */
+.certifications-section {
+  padding: 60px 20px;
+  background: #0d0d1a;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.cert-card {
+  background: #141427;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+}
+
+.cert-card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #ff5c33;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.cert-icon {
+  font-size: 2rem;
+  color: #00d9ff;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background: #2a2a4d;
+  color: #a0a0ff;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.cert-card .cert-meta {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+}
+
+        
     </style>
 </head>
 <body>
@@ -653,6 +730,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -666,7 +744,7 @@
             <p>Computer Science Student at GRIET</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn">View My Work</a>
-                <a href="https://drive.google.com/drive/quota" target="_blank" class="btn">View Resume</a>
+                  <a href="file:///C:/Users/thumm/Downloads/Thumma%20Sai%20Krishna%20Resume.pdf" target="_blank" class="btn">View Resume</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
@@ -678,7 +756,7 @@
         <div class="about-content">
             <div class="about-image">
                 <div class="profile-pic">
-                    <img src="assets/images/profile pic_1.jpg" alt="My Profile Picture">
+                     <img src="assets/images/profile pic_1.jpg" alt="My Profile Picture">
                 </div>
             </div>
             <div class="about-text">
@@ -773,9 +851,147 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+<section id="certifications" class="certifications-section">
+  <h2 class="section-title">Certifications</h2>
+  <div class="certifications-grid">
+
+    <!-- Full-Stack Web Dev -->
+    <div class="cert-card">
+      <i class="fas fa-laptop-code cert-icon"></i>
+      <h3>The Complete Full-Stack Web Development Bootcamp</h3>
+      <p>65+ hours course with 1M+ learners, taught by Dr. Angela Yu. Covers front-end, back-end, databases, and deployment.</p>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
+      </div>
+    </div>
+
+    <!-- Data Analytics with Python -->
+    <div class="cert-card">
+      <i class="fab fa-python cert-icon"></i>
+      <h3>Data Analytics with Python (NPTEL – IIT Roorkee)</h3>
+      <p>12-week program completed with 63% score. Focused on Python, NumPy, Pandas, data visualization, and analytics workflows.</p>
+      <div class="tags">
+        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+      </div>
+    </div>
+
+    <!-- Data Science for Engineers -->
+    <div class="cert-card">
+      <i class="fas fa-database cert-icon"></i>
+      <h3>Data Science for Engineers (NPTEL – IIT Madras)</h3>
+      <p>8-week program with 54% score. Covered statistics, ML concepts, and real-world applications of data science.</p>
+      <div class="tags">
+        <span>Python</span><span>Statistics</span><span>ML</span>
+      </div>
+    </div>
+
+    <!-- AWS Academy Cloud Foundations -->
+    <div class="cert-card">
+      <i class="fab fa-aws cert-icon"></i>
+      <h3>AWS Academy Cloud Foundations</h3>
+      <p>20-hour program introducing AWS cloud concepts, services, security, pricing, and best practices in cloud architecture.</p>
+      <div class="tags">
+        <span>AWS</span><span>Cloud</span><span>Security</span>
+      </div>
+    </div>
+
+    <!-- PCAP Python Essentials -->
+    <div class="cert-card">
+      <i class="fas fa-code cert-icon"></i>
+      <h3>PCAP: Programming Essentials in Python</h3>
+      <p>Cisco Networking Academy & Python Institute course. Focused on programming concepts, OOP, and Python best practices.</p>
+      <div class="tags">
+        <span>Python</span><span>OOP</span><span>Problem Solving</span>
+      </div>
+    </div>
+
+    <!-- Flutter Mobile App Dev -->
+    <div class="cert-card">
+      <i class="fab fa-android cert-icon"></i>
+      <h3>Mobile App Development using Flutter (Infosys)</h3>
+      <p>Course on building cross-platform mobile apps using Flutter and Dart, with modern UI/UX practices.</p>
+      <div class="tags">
+        <span>Flutter</span><span>Dart</span><span>UI/UX</span>
+      </div>
+    </div>
+
+    <!-- n8n Automation Building l1-->
+  <div class="cert-card">
+  <i class="fas fa-graduation-cap"></i>
+  <h3>n8n Beginner’s Course (Level 1)</h3>
+  <p>
+    Completed the official n8n Level 1 course. Learned Editor UI, data structuring,
+    configuring nodes & workflows, and sharing automation solutions.
+  </p>
+  <span class="cert-meta">Issued by: Lorena Ciutacu, n8n • July 28, 2021</span>
+</div>
+
+<!-- n8n Automation Building l2-->
+ <!-- Certification: n8n Beginner’s Course Level 2 -->
+<div class="cert-card">
+  <i class="fas fa-layer-group"></i>
+  <h3>n8n Beginner’s Course (Level 2)</h3>
+  <p>
+    Advanced low-code automation concepts with n8n. Built multi-step workflows,
+    integrated APIs, and applied automation to real-world business cases.
+  </p>
+  <span class="cert-meta">Issued by: n8n • 2022</span>
+</div>
+
+
+  </div>
+</section>
+
+
+
     <!-- Projects Section -->
     <section class="section fade-in" id="projects">
         <h2>Featured Projects</h2>
+
+        <!-- Project: Honeypot Orchestration Platform -->
+<div class="project-card">
+  <div class="project-icon">
+    <i class="fas fa-shield-alt"></i>
+  </div>
+  <h3>Honeypot Orchestration Platform</h3>
+  <p>
+    Designed a <strong>cybersecurity defense system</strong> that dynamically deploys SSH, Web, and Database 
+    honeypots using Kubernetes, Docker, and threat intelligence feeds. Integrated 
+    <strong>machine learning-based attack detection, automated response, and forensic collection</strong>.
+  </p>
+  <div class="project-tech">
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">Go</span>
+    <span class="tech-tag">FastAPI</span>
+    <span class="tech-tag">Kubernetes</span>
+    <span class="tech-tag">Redis</span>
+    <span class="tech-tag">PostgreSQL</span>
+    <span class="tech-tag">React.js</span>
+  </div>
+</div>
+
+<!-- Project: Gesture Recognizer -->
+<div class="project-card">
+  <div class="project-icon">
+    <i class="fas fa-hand-paper"></i>
+  </div>
+  <h3>Gestures Recognizer</h3>
+  <p>
+    Real-time <strong>Hand Gesture Recognition</strong> using <strong>MediaPipe</strong> and 
+    <strong>OpenCV</strong>. Tracks hand landmarks via webcam and overlays recognized 
+    gestures (Open Hand, Pointing, Peace, Thumbs Up, Fist) on-screen with optional 
+    sound feedback.
+  </p>
+  <div class="project-tech">
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">OpenCV</span>
+    <span class="tech-tag">MediaPipe</span>
+    <span class="tech-tag">AI/ML</span>
+  </div>
+</div>
+
+
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-icon">
@@ -819,7 +1035,7 @@
                     <span class="tech-tag">System Monitoring</span>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <div class="project-icon">
                     <i class="fas fa-shopping-cart"></i>
@@ -846,6 +1062,44 @@
                     <span class="tech-tag">AI Integration</span>
                 </div>
             </div>
+
+
+            <!-- Project: Automatic News Sender -->
+<div class="project-card">
+  <div class="project-icon">
+    <i class="fas fa-newspaper"></i>
+  </div>
+  <h3>Automatic News Sender</h3>
+  <p>
+    Built an automation with <strong>n8n</strong> to fetch the latest Tech, Defence, 
+    and Finance news and send them via email in ready-to-post Instagram and LinkedIn formats. 
+    Helps me share updates directly to my social accounts efficiently.
+  </p>
+  <div class="project-tech">
+    <span class="tech-tag">n8n</span>
+    <span class="tech-tag">Automation</span>
+    <span class="tech-tag">Email API</span>
+  </div>
+</div>
+
+<!-- Project: Automatic Payment Reminder -->
+<div class="project-card">
+  <div class="project-icon">
+    <i class="fas fa-credit-card"></i>
+  </div>
+  <h3>Automatic Payment Reminder & Autopay</h3>
+  <p>
+    Developed a workflow to remind and automate my father’s monthly premium 
+    and recurring payments. Includes <strong>insurance, bills, and regular expenses</strong>, 
+    ensuring zero missed deadlines.
+  </p>
+  <div class="project-tech">
+    <span class="tech-tag">n8n</span>
+    <span class="tech-tag">Automation</span>
+    <span class="tech-tag">Payment API</span>
+  </div>
+</div>
+
             
             <div class="project-card">
                 <div class="project-icon">
@@ -860,6 +1114,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Experience Section -->
